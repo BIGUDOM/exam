@@ -13,31 +13,31 @@
       <h1>University of Ble</h1>
     </div>
   </nav> -->
-  <div class="chemistry">
-    <div class="container" id="Chemistry">
-      <h1>Offline Exam</h1>
-      <div class="selct">
-        <select>
-          <option><button>English</button></option>
-          <option><button>Mathematics</button></option>
-          <option><button>Physics</button></option>
-          <option><button>Chemistry</button></option>
-        </select>
-      </div>
-      <div id="exam"></div>
 
+   <!-- Sticky Header -->
+  <header class="exam-header">
+    <h2>Offline Exam</h2>
+    <div id="timer">Time Left: 30:00</div>
+  </header>
+
+ <div class="container">
+    <h1>Offline Exam</h1>
+    <div class="select">
+      <select id="subjectSelect"></select>
+      <div id="timer"></div>
+      <div id="exam"></div>
       <div class="navigation">
-        <button id="prevBtn">Previous</button>
-        <button id="nextBtn">Next</button>
-        <button id="submitBtn">Submit</button>
-      </div>
-      <div id="result"></div>
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+      <button id="submitBtn">Submit</button>
     </div>
-  
+    <div id="result" style="display:none"></div>
+
+    <script src="exam.js"></script>
   </div>
 
-  <script src="chemistry.js"></script>
-  <script src="english.js"></script>
+
+</div>
+
 </body>
 </html>
-
